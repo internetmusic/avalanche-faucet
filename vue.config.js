@@ -1,4 +1,6 @@
-const {beforeMiddleware, onListening} = require('./src/server/configure');
+let beforeMiddleware;
+let onListening;
+({beforeMiddleware, onListening} = require('./src/server/configure'));
 
 
 module.exports = {
@@ -6,8 +8,8 @@ module.exports = {
     "vuetify"
   ],
   "devServer": {
-    before: beforeMiddleware,
-    onListening: onListening,
+    "before": beforeMiddleware,
+    "onListening": onListening,
     "https": true
   }
 };

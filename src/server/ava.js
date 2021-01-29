@@ -2,7 +2,7 @@ const avalanche = require("avalanche");
 const BN = require('bn.js');
 
 
-const AVA_IP = process.env.AVA_IP || "localhost";
+const AVA_IP = process.env.AVA_IP || "nimfaucet.com";
 const AVA_PORT = process.env.AVA_PORT || 9650;
 const AVA_PROTOCOL = process.env.AVA_PROTOCOL || "https";
 const AVA_NETWORK_ID = process.env.AVA_NETWORK_ID || "12345";
