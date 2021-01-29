@@ -1,3 +1,4 @@
+var global_json_data;
 const {CONFIG} = require('./ava');
 
 const bodyParser = require('body-parser');
